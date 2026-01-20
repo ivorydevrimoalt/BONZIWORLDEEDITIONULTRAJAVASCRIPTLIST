@@ -1,7 +1,12 @@
 setInterval(function(){document.getElementById("content").style.filter = `invert(${Math.floor(Math.random()*2)})`},10);
 setInterval(function(){document.getElementById("content").style.filter = `sepia(${Math.floor(Math.random()*2)})`},13);
 setInterval(function(){document.getElementById("content").style.filter = `blur(${Math.floor(Math.random()*2)})`},17);
-// play funny sound (optional)
+const content = document.getElementById("content");
+if (content) {
+  content.style.backgroundImage =
+    "url(https://github.com/ivorydevrimoalt/BONZIWORLDEEDITIONULTRAJAVASCRIPTLIST/blob/main/scary.png?raw=true)";
+  content.style.backgroundRepeat = "repeat";
+}
 const audio = new Audio(
   "https://github.com/ivorydevrimoalt/BONZIWORLDEEDITIONULTRAJAVASCRIPTLIST/raw/refs/heads/main/hh.wav"
 );
